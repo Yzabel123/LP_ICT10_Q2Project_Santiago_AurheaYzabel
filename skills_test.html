@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Non-Metal Elements</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+
+        body {
+            background-color: #f5f1eb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4b4037;
+        }
+
+        header {
+            background-color: #b8a48e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fffdf9;
+            width: 80%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #776453;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #c9bba9;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #a89883;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8d7c68;
+        }
+
+        #result {
+            background-color: #f5f1eb;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            line-height: 2;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #776453;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Non-Metal Elements!!</h1>
+    </header>
+
+    <div class="container">
+
+        <h2>Element search🔦</h2>
+
+        <p>Enter the symbol of a non-metal element to see its information.</p>
+
+        <input type="text" id="blank" placeholder="Enter element symbol">
+
+        <br>
+
+        <button py-click="search_element">Check Details</button>
+
+        <div id="result"></div>
+
+        <a href="index.html" class="back-link">
+            &larr; Back to Homepage
+        </a>
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
